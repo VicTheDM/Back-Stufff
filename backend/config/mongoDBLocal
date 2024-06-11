@@ -1,0 +1,8 @@
+const mongoose = require('mongoose');
+const server = require('./properties');
+
+const Conexion = () => {
+    mongoose.connect(server.DB);
+}
+
+module.exports = Conexion;
